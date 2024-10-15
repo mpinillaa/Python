@@ -10,4 +10,4 @@ if len(caracter) ==1:
         print("es un numero")
         
 else:
-    print("escribe solo una letra")
+    print("escribe solo un caracter")
