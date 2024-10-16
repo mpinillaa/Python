@@ -4,8 +4,18 @@ seg = int(input("introduce los segundos"))
 
 def calcularsegundos(horas,min,seg):
 
+    resultado=(horas*3600) + (min*60) + (seg)
+    return resultado
     
-    min = horas*60    
-    seg = min*60
+print(calcularsegundos(horas,min,seg))
+
+
+def calcularHoras(seg):
+
+    horas= seg//3600
+    min= (seg%3600)//60
+    seg= (seg%3600)%60
     
-    print("esta es la cantidad en segundos" + int(seg))
+    return " horas: " + str(horas) +" minutos: " + str(min) +" segundos:   "+ str(seg)
+
+print(calcularHoras(seg))
