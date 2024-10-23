@@ -19,5 +19,12 @@ print(" La palabra " + str(palabra) + "  aparece " + str(lista.count(palabra)) +
 print(lista)
 
 
-palabra2 = input("que palabra quieres reemplazar: " + str(palabra) )
+palabra2 = input("que palabra quieres reemplazar: " )
 
+for i in range(len(lista)):
+    if lista[i]==palabra:
+        lista[i]=palabra2
+
+print(lista)
+
+print(lista[i], end="")
