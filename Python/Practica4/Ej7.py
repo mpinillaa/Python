@@ -29,3 +29,4 @@ for i in nombres:
 print(nombresEncontrados)
     
 '''te cuenta los nombres(i) de la lista nombres'''
+'''No poner While True: porque te pone un 0 en el examen'''
