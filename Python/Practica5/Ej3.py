@@ -19,15 +19,19 @@ codigo = {
 '&': '.-...', '(': '-.--.', ')': '-.--.-'
 }
 
-entrada=input("anota tu cadena para convertir a morse  ")
-entrada=entrada.upper()
+entrada=input("Anota tu cadena de código morse a traducir:\n")
+entradaCollection=entrada.split()
 
-resultado=[]
-"""lista"""
+print(entradaCollection)
 
-for i in entrada:
-    if i in codigo:
-            resultado.append(codigo[i]+' ')
-    else:
-        resultado.append('')
+resultado=['']
+
+for i in entradaCollection:
+    for c,v in codigo.items():
+        if i==v:
+            print(codigo[c])
+            resultado.append(c)
 print(resultado)
+
+
+"""la c es el 8 y la v '---.."""

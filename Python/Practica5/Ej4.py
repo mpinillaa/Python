@@ -1,0 +1,2 @@
+diccionarioGus={"Alberto":["penes", "gays"]}
+
