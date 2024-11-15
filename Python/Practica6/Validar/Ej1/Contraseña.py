@@ -1,6 +1,6 @@
 def validarContra(num):
     if len(num) < 8:
-        print("el nombre de usuaruio debe contener al menos 6 caracteres") 
+        print("el nombre de usuaruio debe contener al menos 6 caracteres")
         return False
     if (num.isalnum()):
         return False
@@ -17,5 +17,4 @@ def validarContra(num):
         if (num.isspace()==True):
             print("no pudede tener espacios")
             return False
-
     return True
