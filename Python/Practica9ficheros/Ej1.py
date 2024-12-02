@@ -19,3 +19,15 @@ while opcion<4 | opcion>0:
                 telefono=lineas.strip().split(":")
                 print(telefono[1])
                 break
+            
+    if opcion ==3:
+        nombre=input("mete nombre para eliminar:  ")
+        f=open ("Practica9ficheros/Ficheros/listin.txt", "r")
+        lineas=f.readlines()
+            
+        with open ("Practica9ficheros/Ficheros/listin.txt", "w") as fichero:    
+            for linea in lineas:
+             if nombre not in linea:
+                 fichero.write(linea) 
+                 
+    opcion=int(input("1.Añadir\n2.Consulta\n3.Eliminar\n"))
