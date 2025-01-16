@@ -1,0 +1,23 @@
+from funciones.Apartados import crearDiccionario, ordenar_diccionario, menor_num_tiradas, generar_lista_tuplas
+
+nombres="Sergio,10,12,23;Alberto,10,12,1;Pinilla,3,1,0;Alberto,50,50,60;"
+print(60*"-")
+print("Apartado 1:")
+print(nombres)
+print(60*"-")
+d=crearDiccionario(nombres)
+print("Apartado 2:")
+print(d)
+print(60*"-")
+o=ordenar_diccionario(d)
+print("Apartado 3:")
+print(o)
+print(60*"-")
+m=menor_num_tiradas(d)
+print("Apartado 4:")
+print(m)
+print(60*"-")
+s=generar_lista_tuplas(o)
+print("Apartado 5:")
+print(s)
+print(60*"-")
