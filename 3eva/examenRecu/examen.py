@@ -1,5 +1,5 @@
 
-from utilidades import get_datos, get_charlasaforo, venta_entradas
+from utilidades import get_datos, get_charlasaforo, venta_entradas, generar_csv
 
 datos = get_datos()
 
@@ -11,5 +11,9 @@ print(filtradas)
 
 venta = venta_entradas(datos, "Ciberseguridad en la Era Digital", 10)
 print("Venta realizada:", venta)
+
+generar_csv(datos)
+print("Archivo CSV generado en assets/resumen_salas.csv")
+
 
 

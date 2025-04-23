@@ -3,7 +3,7 @@ import csv
 
 
 def get_datos():
- with open("/home/administrador/Escritorio/Python-main (2)/Python/3eva/examenRecu/assets/datos.json", "r", encoding="utf-8") as fichero:
+ with open("3eva/examenRecu/assets/datos.json", "r", encoding="utf-8") as fichero:
 
         datos = json.load(fichero)
         return datos
@@ -34,7 +34,14 @@ def venta_entradas(datos, tema, entradasvender):
     return False
 
 
-#def generar_csv(datos):
- #   with open("assets/generar.csv", "w", newline="", encoding="utf-8") as archivo:
-  #      writer = csv.writer(archivo)
+def generar_csv(datos):
+    with open("3eva/examenRecu/assets/generar.csv", "w", encoding="utf-8") as fichero:
+        contenido = csv.writer(generar_csv)
+        contenido.writerow(["Numero Sala", "Numero de Charlas", "Recaudacion"])
+        for sala in datos:
+            contenido.writerow([
+                sala["numero_sala"],
+                len(sala["charlas"]),
+                sala["recaudacion"]
+            ])
    
